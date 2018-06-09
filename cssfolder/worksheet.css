@@ -1,0 +1,171 @@
+body{
+    background-color: #e6e6e6; 
+        box-sizing: border-box;
+            overflow-x: hidden;
+
+}
+
+
+
+.head{
+    margin-left:5%;
+    margin-top:2%;
+
+}
+
+.fill{
+       font-size: 20px;
+}
+
+.form{
+    display: inline-block;
+    width:23%;
+     margin-left: 1%;
+}
+
+select{
+        width:60%;
+        border:none;
+        outline:none;
+        background-color: white;
+        padding: 2% 1%;  
+        margin-left:10%;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+}
+
+
+table{
+    width: 80%;
+    margin:auto;
+    background-color:white;
+    text-align: center;
+}
+
+tr{
+    transition: all 0.5s;
+    font-size: 18px;
+}
+
+table,tr,td{
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(odd){
+    background-color: whitesmoke;
+}
+
+tr:hover{
+    background-color: #e01f2f;
+}
+
+td,th{  
+        padding:1% 2%;
+}
+td{
+    padding-left: 2%;
+}
+
+.header{
+    width:  max-content;
+    border-bottom: 2px dashed black;
+    font-size: 35px;
+    margin-bottom: 2%;
+   
+}
+
+.caption{
+    width:  max-content;
+    font-size: 35px;
+    border-bottom: 2px dashed black;
+    text-align: center;
+    margin: 2% auto;
+    
+
+}
+
+th{
+    background-color: #e01f2f;
+    font-size: 25px;
+}
+
+input[type=submit]{
+    border:none;
+    background-color: transparent;
+}
+
+.change{
+    display: inline-block;
+    width:80%;
+        background-color: white;
+        padding: 2% 1%;
+        text-align: center;
+        transition: all .5s;
+        font-weight: 600;
+        border-radius: 5px;
+}
+
+
+
+.change:before{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+left:0;
+  top: 0;
+  height:0%;
+  width: 2px; 
+  transition: all 0.5s;
+}
+.change:after{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  right:0;
+  bottom: 0;
+  height:0%;
+  width: 2px;  
+  transition: all 0.5s;
+}
+
+.top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.7s;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.7s;
+}
+
+
+.change:hover::before,.change:hover::after{
+    height: 100%;
+}
+
+.change:hover > .top, .change:hover > .bottom{
+    width:100%;
+}
+
+.change:hover>.optionlist{
+  color:white;
+}
+.change:hover{
+    background-color: #e01f2f;
+    transform: scale(1.05);
+}
+
+#salary{
+     width: 80%;
+    margin:auto;
+    background-color:white;
+    text-align: left;
+}

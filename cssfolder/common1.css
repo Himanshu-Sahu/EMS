@@ -1,0 +1,79 @@
+input[type=submit]{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.change{
+    position:relative;
+    display:inline-block;
+        width:20%;
+        background-color: white;
+        padding: 1% 1%;
+        margin:1% 0.5%;
+        font-size: 20px;
+        text-align: center;
+        transition: all .5s;
+        font-weight: 600;
+        border-radius: 5px;
+
+}
+
+
+
+.change:before{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+left:0;
+  top: 0;
+  height:0%;
+  width: 2px; 
+  transition: all 0.5s;
+}
+.change:after{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  right:0;
+  bottom: 0;
+  height:0%;
+  width: 2px;  
+  transition: all 0.5s;
+}
+
+.top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.7s;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.7s;
+}
+
+
+.change:hover::before,.change:hover::after{
+    height: 100%;
+}
+
+.change:hover > .top, .change:hover > .bottom{
+    width:100%;
+}
+
+.change:hover>.optionlist{
+  color:white;
+}
+.change:hover{
+    background-color: #e01f2f;
+    transform: scale(1.05);
+}
+.option{
+text-align: center;}

@@ -1,0 +1,158 @@
+body{
+    background-color: #e6e6e6;
+  
+}
+
+.topnav{
+    display: none;
+}
+
+#exit{
+    font-size:40px;
+    color: red;
+    text-align: center;
+    margin-top: 30%;
+}
+
+#sheet{
+    position:relative;
+    top:15%;
+    margin:auto;
+    width:55%;
+    height:750px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.fill{
+    width:25%;
+    display: inline-block;
+    padding: 2% 1%;
+    font-size: 20px;
+}
+
+.form{
+    margin: 1% 2%;
+}
+
+#button{
+        margin-left: 30%;
+}
+
+input[type=submit],input[type=reset]{
+    border:none;
+    background-color: #e95f6a;
+    color:white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    cursor:pointer;
+    margin-bottom: 0%;
+    display:inline-block;
+    width: 100%;
+    transition:background-color 0.5s;
+    padding:5% 0;
+}
+
+input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #e01f2f;
+}
+
+textarea{
+    border:none;
+    resize: none;
+    width:60%;
+    height: 20%;
+    margin: 0;
+}
+
+
+#date> input{
+ width:40%;
+ padding: 2% 1%;
+ border:none;
+ border-radius:2px;
+}
+#selector>select{
+    width:40%;
+ padding: 2% 1%;
+ border:none;
+ border-radius:2px;
+ outline:none;
+}
+
+option{
+}
+input[type=number],input[type=text],#ap1,#ap2{
+ width:20%;
+ padding: 2% 1%;
+ border:none;
+ border-radius:2px;
+ outline:none; 
+}
+
+.change{
+    width:30%;
+    position:relative;
+    display:inline-block;   
+    float:left;
+    
+}
+.change:nth-of-type(1){
+    margin-right: 2%;
+}
+.change:before{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  left:0;
+  top:0;
+  height:0%;
+  width: 2px; 
+  transition: all 0.5s;
+}
+.change:after{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  right:0;
+  bottom: 0;
+  height:0%;
+  width: 2px;  
+  transition: all 0.5s;
+}
+
+.top,.bottom{
+    position: absolute;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.5s;
+}
+.bottom{
+    bottom:0;
+    right:0;
+}
+
+
+.change:hover::before,.change:hover::after{
+    height: 100%;
+}
+
+.change:hover > .top, .change:hover > .bottom{
+    width:100%;
+}
+
+.required{
+    color:red;
+}
+
+.caption{
+    font-size: 35px;
+    text-align: center;
+    margin: 2% 0;
+    border-bottom: 2px dotted black;
+}
+
+.view{
+    position: relative;
+    top:-50%;
+}

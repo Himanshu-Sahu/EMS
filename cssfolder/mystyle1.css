@@ -1,0 +1,108 @@
+body{
+    background-color: #e6e6e6;
+    overflow-x:hidden;
+}
+
+#header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color:#e01f2f;
+    padding: 3% 0;
+    border-bottom: 2px solid black;
+    color: white;
+    font-size: 40px;
+       font-family: "Roboto", tahoma, arial, Verdana;
+
+}
+input{
+    border-radius: 5px;
+    border:none;
+    width: 50%;
+    padding: 2%;
+    margin-bottom: 2%;
+    outline: none;
+}
+
+h1{
+    margin:0;
+}
+.error{
+       width: max-content;
+ color:red;
+ font-size: 15px;
+ margin: 0.5% 0;
+ text-align:center;
+}
+
+input[type=submit]{
+    background-color: #e95f6a;
+    color:white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    cursor:pointer;
+    margin-bottom: 0%;
+    display:inline-block;
+    width: 100%;
+    transition:background-color 0.5s;
+}
+
+#form1{
+    margin: 15% 0 0 33%;
+}
+#change{
+    width:50%;
+    position:relative;
+    
+}
+
+input[type=submit]:hover{
+    background-color: #e01f2f;
+}
+
+#change:before{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  left:0;
+  top:0;
+  height:0%;
+  width: 2px; 
+  transition: all 0.5s;
+}
+#change:after{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  right:0;
+  bottom: 0;
+  height:0%;
+  width: 2px;  
+  transition: all 0.5s;
+}
+
+.top,.bottom{
+    position: absolute;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.5s;
+}
+.bottom{
+    bottom:0;
+    right:0;
+}
+
+
+#change:hover::before,#change:hover::after{
+    height: 100%;
+}
+
+#change:hover > .top, #change:hover > .bottom{
+    width:100%;
+}
+
+.head{
+    font-size: 35px;
+}

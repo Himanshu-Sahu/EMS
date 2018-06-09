@@ -1,0 +1,155 @@
+body{
+    background-color: #e6e6e6; 
+}
+
+.box{
+   display:block;
+   text-align: center;
+    margin: 5% auto;
+    width: 60%;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.fill{
+    width:20%;
+    display: inline-block;
+    padding: 2% 1%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.form{
+    margin: 1% 2%;
+}
+.caption1{
+    font-size: 35px;
+    text-align:  left;
+    margin: 2% 0;
+    margin-left:12%;
+}
+
+
+textArea{
+    border:none;
+    resize: none;
+}
+
+.fill{
+    width:20%;
+    display: inline-block;
+    padding: 2% 1%;
+    font-size: 20px;
+}
+
+.form{
+    margin: 1% 2%;
+}
+
+input{
+ width:50%;
+ padding: 2% 1%;
+ border:none;
+ border-radius:5px;
+ outline:none; 
+}
+input[type=submit]{
+    font-size: 14px;
+     min-width: min-content;
+
+}
+select{
+    display:inline-block;
+        width:30%;
+        border:none;
+        outline:none;
+        background-color: white;
+        padding: 1% 1%;
+        margin:1% 0.5%;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+}
+
+input[type=submit]{
+    border:none;
+    background-color: transparent;
+}
+
+.change{
+    position:relative;
+    display:inline-block;
+        width:20%;
+        background-color: white;
+        padding: 1% 1%;
+        margin:1% 0.5%;
+        font-size: 20px;
+        text-align: center;
+        transition: all .5s;
+        font-weight: 600;
+        border-radius: 5px;
+
+}
+
+
+
+.change:before{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+left:0;
+  top: 0;
+  height:0%;
+  width: 2px; 
+  transition: all 0.5s;
+}
+.change:after{
+    content: '';
+    background: #4d4d4d; 
+  position: absolute; 
+  right:0;
+  bottom: 0;
+  height:0%;
+  width: 2px;  
+  transition: all 0.5s;
+}
+
+.top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.7s;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:0%;
+    border-top:2px solid #4d4d4d;
+    transition: all 0.7s;
+}
+
+
+.change:hover::before,.change:hover::after{
+    height: 100%;
+}
+
+.change:hover > .top, .change:hover > .bottom{
+    width:100%;
+}
+
+.change:hover>.optionlist{
+  color:white;
+}
+.change:hover{
+    background-color: #e01f2f;
+    transform: scale(1.05);
+}
+.option{
+text-align: center;}
+
+.error{
+    color:red;
+}

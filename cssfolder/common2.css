@@ -1,0 +1,61 @@
+body{
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+   
+}
+
+
+.user_project{
+   position: relative;
+   display:block;
+   text-align: center;
+}
+
+table{
+    text-align: left;
+    margin:auto;
+    width: 60%;
+    background-color:white;
+    table-layout: auto;
+        border-radius: 5px;
+
+}
+
+tr{
+    transition: all 0.5s;
+    font-size: 18px;
+}
+
+table,tr,td{
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(odd){
+    background-color: whitesmoke;
+}
+
+tr:hover{
+    background-color: #e01f2f;
+}
+
+td,th{  
+        padding:2% 5%;
+}
+td{
+    padding-left: 6%;
+}
+
+.caption{
+    font-size: 35px;
+    text-align:  left;
+    margin-bottom: 2%;
+}
+
+th{
+    background-color: #e01f2f;
+    font-size: 25px;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
